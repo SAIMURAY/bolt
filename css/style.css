@@ -4,8 +4,10 @@
   content: "";
   clear: both;
 }
-@media screen and(min-width:1200px) {
-  .hoge
+@media screen and (min-width: 1200px) {
+  .inner {
+    width: 1100px;
+  }
 }
 .header {
   background-color: #fff;
@@ -15,7 +17,6 @@
   z-index: 1;
 }
 .header__inner{
-  width: 1100px;
   margin: 0 auto;
   padding: 15px 0;
   box-sizing: border-box;
@@ -38,7 +39,6 @@
   padding-top: 70px;
 }
 .section__inner {
-  width: 1100px;
   margin: 0 auto;
   box-sizing: border-box;
 }
@@ -185,7 +185,4 @@
   text-align: right;
   padding-top: 20px;
   padding-bottom: 25px;
-}
-.footer__inner {
-  width: 1100px;
 }
