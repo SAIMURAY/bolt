@@ -12,99 +12,94 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
   </head>
   <body>
     <header class="header">
       <div class="inner header__inner clearfix">
-        <i class="fas fa-bolt fa-2x bolt"></i>
-        <div class="contact">Contact</div>
+        <div class="bolt"></div>
+        <a>
+          <div class="contact">Contact</div>
+        </a>
       </div>
     </header>
     <main class="main">
       <section class="theme">
-        <div class="inner section__inner">
+        <div class="inner">
           <h1 class="theme__title">Bolt Theme</h1>
-          <h2 class="theme__title__small">FREE BOOTSTRAP THEMES</h2>
+          <p class="theme__subtitle">FREE BOOTSTRAP THEMES</p>
         </div>
       </section>
-      <section class="green__section">
-        <div class=" inner section__inner clearfix">
-          <img class="green__section__img"   src="img/iphone.png">
-          <div class="right__side">
-            <h3 class="green__section__title">
-            WHAT WE CAN DO?
-            </h3>
-            <p class="green__section__txt">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      <section class="what">
+        <div class="inner clearfix">
+          <div class="what__left">
+            <img class="what__img" src="img/iphone.png">
+          </div>
+          <div class="what__right">
+            <h2 class="what__title">WHAT WE CAN DO?</h2>
+            <p class="what__txt">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
             </p>
           </div>
         </div>
       </section>
-      <section class="figure__section">
-        <div class="inner section__inner">
-          <h4 class="figure__title">OUR LATEST WORK</h4>
-          <figure class="figure__top clearfix">
-            <img class="figure__section__img" src="img/01.jpg">
-            <img class="figure__section__img" src="img/02.jpg">
-            <img class="figure__section__img right__img" src="img/03.jpg">
-          </figure>
-          <figure class="figure__bottom clearfix">
-            <img class="figure__section__img" src="img/04.jpg">
-            <img class="figure__section__img" src="img/05.jpg">
-            <img class="figure__section__img right__img" src="img/06.jpg">
-          </figure>
-          <div class="figure__footer clearfix">
-            <p class="figure__txt">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.
+      <section class="work">
+        <div class="inner">
+          <h2 class="work__title">OUR LATEST WORK</h2>
+          <a class="clearfix">
+              <img class="work__img" src="img/01.jpg">
+              <img class="work__img" src="img/02.jpg">
+              <img class="work__img" src="img/03.jpg">
+              <img class="work__img" src="img/04.jpg">
+              <img class="work__img" src="img/05.jpg">
+              <img class="work__img" src="img/06.jpg">
+          </a>
+          <div class="work__footer clearfix">
+            <p class="work__txt">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.
             </p>
-            <div class="figure__button">Email Me!</div>
+            <a>
+              <div class="work__button">Email Me!</div>
+            </a>
           </div>
         </div>
       </section>
-      <section class="black__section">
-        <div class="inner section__inner">
-          <h5 class="black__section__title">OUR SKILLS</h5>
-          <figure class="black__section__figure">
-            <div class="black__section__img">
+      <section class="skills">
+        <div class="inner">
+          <h2 class="skills__title">OUR SKILLS</h2>
+          <div class="skills__main">
+            <figure class="skills__figure">
               <img src="img/circle_01.png">
-              <figcaption class="black__section__figcaption">
-              JavaScript
-              </figcaption>
-            </div>
-            <div class="black__section__img">
+              <figcaption class="skills__figcaption">JavaScript</figcaption>
+            </figure>
+            <figure class="skills__figure">
               <img src="img/circle_02.png">
-              <figcaption class="black__section__figcaption">
-              Bootstrap
-              </figcaption>
-            </div>
-            <div class="black__section__img">
+              <figcaption class="skills__figcaption">Bootstrap</figcaption>
+            </figure>
+            <figure class="skills__figure">
               <img src="img/circle_03.png">
-              <figcaption class="black__section__figcaption">
-              WordPress
-              </figcaption>
-            </div>
-            <div class="black__section__img">
+              <figcaption class="skills__figcaption">WordPress</figcaption>
+            </figure>
+            <figure class="skills__figure">
               <img src="img/circle_04.png">
-              <figcaption class="black__section__figcaption">
-              Photoshop
-              </figcaption>
-            </div>
-          </figure>
+              <figcaption class="skills__figcaption">Photoshop</figcaption>
+            </figure>
+          </div>
         </div>
       </section>
-      <section class="sns__section">
-        <div class="inner section__inner sns__contents clearfix">
-          <i class="fab fa-facebook-f fa-3x   icon"></i>
-          <i class="fab fa-dribbble fa-3x icon"></i>
-          <i class="fab fa-twitter fa-3x icon"></i>
-          <i class="fas fa-envelope fa-3x icon"></i>
+      <section class="sns">
+        <div class="inner sns__contents">
+          <a class="clearfix">
+            <div class="facebook icon"></div>
+            <div class="dribbble icon"></div>
+            <div class="twitter icon"></div>
+            <div class="mail icon"></div>
+          </a>
         </div>
       </section>
     </main>
     <footer class="footer">
       <div class="inner">
-        Clafted with &hearts; by BlackTie.co.
+        Clafted with <span class="heart"> by</span> BlackTie.co.
       </div>
     </footer>
     <script src="js/script.js"></script>

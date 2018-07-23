@@ -4,11 +4,6 @@
   content: "";
   clear: both;
 }
-@media screen and (min-width: 1200px) {
-  .inner {
-    width: 1100px;
-  }
-}
 .header {
   background-color: #fff;
   position: fixed;
@@ -17,13 +12,19 @@
   z-index: 1;
 }
 .header__inner{
-  margin: 0 auto;
   padding: 15px 0;
-  box-sizing: border-box;
+}
+.inner {
+  width: 1100px;
+  margin: 0 auto;
 }
 .bolt {
   float: left;
-  color: #333;
+}
+.bolt::before{
+  font-family: FontAwesome;
+  content: "\f0e7";
+  font-size: 3em;
 }
 .contact {
   background-color: #74cfae;
@@ -31,16 +32,16 @@
   font-size: 12px;
   float: right;
   padding: 14px 12px;
+  transition: all 0.3s;
   cursor: pointer;
+}
+.contact:hover {
+  color: #333;
 }
 .main {
   background-color: #f2f2f2;
   color: #333;
   padding-top: 70px;
-}
-.section__inner {
-  margin: 0 auto;
-  box-sizing: border-box;
 }
 .theme {
   padding: 250px 0;
@@ -52,114 +53,115 @@
   font-weight: 700;
   font-family: 'Raleway', sans-serif;
 }
-.theme__title__small {
+.theme__subtitle {
   margin-top: 20px;
   color: #c0c0c0;
   font-size: 30px;
 }
-.green__section {
+.what {
   background-color: #74cfae;
   padding-top: 50px;
 }
-.green__section__img {
+.what__left {
   float: left;
+  width: 350px;
+  text-align: center;
 }
-.right__side {
+.what__right {
   color: #fff;
   text-align: center;
   float: right;
   width: 750px;
 }
-.green__section__title {
+.what__title {
   font-size: 24px;
   margin-bottom: 35px;
   font-family: 'Raleway', sans-serif;
 }
-.green__section__txt {
+.what__txt {
   font-size: 20px;
+  line-height: 1.5;
 }
-.figure__section {
+.work {
   padding-top: 60px;
   padding-bottom: 70px;
   text-align: center;
 }
-.figure__title {
+.work__title {
   font-size: 24px;
-  margin-bottom: 40px;
   font-family: 'Raleway', sans-serif;
+  margin-bottom: 40px;
 }
-.figure__top {
-  height: 300px;
-  margin-bottom: 80px;
-}
-.figure__bottom {
-  height: 300px;
-  margin-bottom: 90px;
-}
-.figure__section__img {
+.work__img {
   margin-right: 100px;
-  float: left;
+  margin-bottom: 80px;
   transition: all 0.3s;
   cursor: pointer;
   opacity: 0.7;
+  float: left;
 }
-.right__img {
+.work__img:nth-child(3n) {
   margin-right: 0;
 }
-.figure__section__img:hover {
+.work__img:nth-child(n + 4) {
+  margin-bottom: 0;
+}
+.work__img:hover {
   opacity: 1;
 }
-.figure__footer {
+.work__footer {
+  margin-top: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.figure__txt {
+.work__txt {
   margin-right: 90px;
   float: left;
   width: 540px;
+  line-height: 1.5;
 }
-.figure__button {
+.work__button {
   font-size: 12px;
   float: right;
   padding: 14px 20px;
   background-color: #74cfae;
   color: #fff;
-  cursor: pointer;
   transition: all 0.3s;
+  cursor: pointer;
 }
-.figure__button:hover {
+.work__button:hover {
   color: #333;
 }
-.black__section {
+.skills {
   background-color: #4e4e4e;
   color: #fff;
   padding-top: 70px;
   padding-bottom: 100px;
   text-align: center;
 }
-.black__section__title {
+.skills__title {
   margin-bottom: 70px;
   font-size: 24px;
   font-family: 'Raleway', sans-serif;
 }
-.black__section__figure {
+.skills__main {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.black__section__img {
+.skills__figure {
   margin-right: 180px;
   float: left;
 }
-.black__section__img:last-child {
+.skills__figure:last-child {
   margin-right: 0;
 }
-.black__section__figcaption {
+.skills__figcaption {
   font-size: 16px;
   margin-top: 10px;
 }
-.sns__section {
+.sns {
   padding: 200px 0;
   text-align: center;
 }
@@ -167,6 +169,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 3em;
 }
 .icon {
   color: #74cfae;
@@ -175,9 +178,22 @@
   cursor: pointer;
   transition: all 0.3s;
   padding: 30px 0;
+  font-family: FontAwesome;
 }
 .icon:hover {
   background-color: #fff;
+}
+.facebook::before {
+  content: "\f09a";
+}
+.dribbble::before {
+  content: "\f17d";
+}
+.twitter::before {
+  content: "\f099";
+}
+.mail::before {
+  content: "\f0e0";
 }
 .footer {
   background-color: #74cfae;
@@ -185,4 +201,8 @@
   text-align: right;
   padding-top: 20px;
   padding-bottom: 25px;
+}
+.heart::before {
+  font-family: FontAwesome;
+  content: "\f004";
 }
