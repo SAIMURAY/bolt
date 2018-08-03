@@ -32,6 +32,9 @@
 .header__right:hover {
   color: #333;
 }
+.menu {
+  display: none;
+}
 .main {
   background-color: #f2f2f2;
   color: #333;
@@ -61,7 +64,7 @@
   width: 350px;
   text-align: center;
 }
-.what__img {
+.img {
   vertical-align: bottom;
 }
 .what__right {
@@ -95,9 +98,6 @@
   float: left;
   margin-right: 100px;
   margin-bottom: 80px;
-}
-.work__img {
-  vertical-align: bottom;
 }
 .clearfix .work__link:nth-child(3n) {
   margin-right: 0;
@@ -186,4 +186,103 @@
   text-align: right;
   padding-top: 20px;
   padding-bottom: 25px;
+}
+@media screen and (max-width: 1199px) {
+  .inner {
+    width: 97%;
+  }
+  .what {
+    padding-bottom: 25px;
+  }
+  .what__left {
+    margin-bottom: 20px;
+    float: none;
+    width: 100%;
+  }
+  .what__right {
+    float: none;
+    width: 100%;
+  }
+  .work__link {
+    float: none;
+    margin: 0;
+    display: block;
+  }
+  .work__footer {
+    display: block;
+    margin-top: 0;
+  }
+  .work__txt {
+    margin-bottom: 40px;
+    margin-right: 0;
+    float: none;
+    width: 100%;
+  }
+  .work__button {
+    float: none;
+    display: inline-block;
+  }
+  .clearfix .work__link:nth-child(3n) {
+    margin-bottom: 80px;
+  }
+  .skills__main {
+    display: block;
+  }
+  .skills__figure {
+    margin-bottom: 88px;
+    margin-right: 0;
+    float: none;
+  }
+  .skills__figure:last-child {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 766px) {
+  .header__right {
+    box-sizing: border-box;
+    float: none;
+    position: fixed;
+    top:78px;
+    left: 0;
+    width: 100%;
+    display: none;
+  }
+  .menu {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    float: right;
+    box-sizing: border-box;
+    width: 45px;
+    height: 37px;
+    display: block;
+  }
+  .menu .menu__bar {
+    background-color: #ddd;
+    height: 2px;
+    width: 23px;
+    margin-bottom: 5px;
+    display: block;
+  }
+  .menu .menu__bar:last-child {
+    margin-bottom: 0;
+  }
+  .theme {
+    padding-top: 160px;
+    padding-bottom: 130px;
+  }
+  .theme__title {
+    font-size: 80px;
+  }
+  .sns {
+    padding: 50px 15px;
+  }
+  .sns__contents {
+    display: inline-block;
+  }
+  .sns__icon {
+    float: none;
+    display: inline-block;
+    width: 100%;
+  }
 }
