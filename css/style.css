@@ -4,6 +4,13 @@
   content: "";
   clear: both;
 }
+.inner {
+  width: 1100px;
+  margin: 0 auto;
+}
+img {
+  vertical-align: bottom;
+}
 .header {
   background-color: #fff;
   position: fixed;
@@ -11,10 +18,6 @@
   width: 100%;
   z-index: 1;
   padding: 15px 0;
-}
-.inner {
-  width: 1100px;
-  margin: 0 auto;
 }
 .header__left {
   float: left;
@@ -64,13 +67,10 @@
   width: 350px;
   text-align: center;
 }
-.img {
-  vertical-align: bottom;
-}
 .what__right {
   color: #fff;
   text-align: center;
-  float: right;
+  float: left;
   width: 750px;
 }
 .what__title {
@@ -122,7 +122,7 @@
 }
 .work__button {
   font-size: 12px;
-  float: right;
+  float: left;
   padding: 14px 20px;
   background-color: #74cfae;
   color: #fff;
@@ -205,8 +205,9 @@
   }
   .work__link {
     float: none;
-    margin: 0;
+    margin: 0 auto;
     display: block;
+    width: 300px;
   }
   .work__footer {
     display: block;
@@ -222,8 +223,14 @@
     float: none;
     display: inline-block;
   }
-  .clearfix .work__link:nth-child(3n) {
+  .clearfix .work__link:nth-child(3) {
     margin-bottom: 80px;
+  }
+  .clearfix .work__link:nth-child(3n) {
+    margin-right: auto;
+  }
+  .work__footer {
+    margin-top: 80px;
   }
   .skills__main {
     display: block;
@@ -273,6 +280,8 @@
   }
   .theme__title {
     font-size: 80px;
+    width: 300px;
+    margin: 0 auto;
   }
   .sns {
     padding: 50px 15px;
