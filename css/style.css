@@ -10,6 +10,7 @@
 }
 img {
   vertical-align: bottom;
+  max-width: 100%;
 }
 .header {
   background-color: #fff;
@@ -52,6 +53,9 @@ img {
   font-size: 90px;
   font-weight: 700;
   font-family: 'Raleway', sans-serif;
+}
+.theme__space {
+  display: none;
 }
 .theme__subtitle {
   margin-top: 20px;
@@ -205,9 +209,9 @@ img {
   }
   .work__link {
     float: none;
-    margin: 0 auto;
     display: block;
-    width: 300px;
+    margin: 0 auto;
+    max-width: 300px;
   }
   .work__footer {
     display: block;
@@ -223,11 +227,12 @@ img {
     float: none;
     display: inline-block;
   }
-  .clearfix .work__link:nth-child(3) {
-    margin-bottom: 80px;
-  }
   .clearfix .work__link:nth-child(3n) {
     margin-right: auto;
+    margin-bottom: 80px;
+  }
+  .clearfix .work__link:last-child {
+    margin-bottom: 0;
   }
   .work__footer {
     margin-top: 80px;
@@ -280,8 +285,9 @@ img {
   }
   .theme__title {
     font-size: 80px;
-    width: 300px;
-    margin: 0 auto;
+  }
+  .theme__space {
+    display: block;
   }
   .sns {
     padding: 50px 15px;
